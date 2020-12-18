@@ -52,4 +52,6 @@ dependencies {
     implementation 'org.adblockplus:adblock-android:3.0'
 
     implementation 'org.adblockplus:adblock-android-webview:3.0'
+
+    implementation 'com.davemorrissey.labs:subsampling-scale-image-view-androidx:3.10.0'
 }

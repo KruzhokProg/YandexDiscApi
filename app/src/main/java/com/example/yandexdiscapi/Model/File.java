@@ -1,5 +1,7 @@
 package com.example.yandexdiscapi.Model;
 
+import android.graphics.Bitmap;
+
 import com.google.gson.annotations.SerializedName;
 
 public class File {
@@ -11,6 +13,8 @@ public class File {
     private String file_url;
     private String preview;
     private String path;
+    private String public_url;
+    private Bitmap bmp;
 
     public File(String name, String created, String mime_type, String media_type, String file_url, String preview, String path) {
         this.name = name;
@@ -20,6 +24,23 @@ public class File {
         this.file_url = file_url;
         this.preview = preview;
         this.path = path;
+    }
+
+
+    public Bitmap getBmp() {
+        return bmp;
+    }
+
+    public void setBmp(Bitmap bmp) {
+        this.bmp = bmp;
+    }
+
+    public String getPublic_url() {
+        return public_url;
+    }
+
+    public void setPublic_url(String public_url) {
+        this.public_url = public_url;
     }
 
     public String getName() {
